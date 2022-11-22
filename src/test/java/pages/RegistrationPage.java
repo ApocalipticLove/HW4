@@ -22,7 +22,7 @@ public class RegistrationPage {
             SubjectsInput = $("#subjectsInput"),
             HobbyInput = $("#hobbiesWrapper"),
             uploadPictureInput = $("#uploadPicture"),
-            currentAddressInput = $("#uploadPicture"),
+            currentAddressInput = $("#currentAddress"),
             stateInput = $("#state"),
             cityInput = $("#city"),
 
@@ -54,7 +54,7 @@ public class RegistrationPage {
     }
 
     public RegistrationPage setGender(String value) {
-        GenderInput.$(byText("Male")).click();
+        GenderInput.$(byText(value)).click();
         return this;
     }
 
@@ -75,12 +75,12 @@ public class RegistrationPage {
     }
 
     public RegistrationPage setHobby(String value) {
-        HobbyInput.$(byText("Sports")).click();
+        HobbyInput.$(byText(value)).click();
         return this;
     }
 
     public RegistrationPage setUploadPicture(String path) {
-        uploadPictureInput.uploadFile(new File("src/test/resources/test.jpg"));
+        uploadPictureInput.uploadFile(new File(path));
         return this;
     }
 
