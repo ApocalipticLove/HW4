@@ -2,8 +2,7 @@ package com.demoqa;
 
 import org.junit.jupiter.api.Test;
 
-public class FirstTest extends TestBase {
-
+public class PageObjectsTest extends TestBase{
     @Test
     protected void fillFormTest() {
 
