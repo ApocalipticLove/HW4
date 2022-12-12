@@ -8,12 +8,13 @@
 
  dependencies {
     testImplementation(
+            'com.github.javafaker:javafaker:1.0.2',
             'com.codeborne:selenide:6.9.0',
             'org.junit.jupiter:junit-jupiter:5.9.0')
 }
 
  tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
+    options.encoding = 'UTF-8' 
 }
 
  test {
